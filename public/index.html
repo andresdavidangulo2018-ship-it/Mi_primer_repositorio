@@ -17,6 +17,27 @@
     </header>
 
     <main>
+        <section id="registro-emprendedor" class="card" style="margin-top: 40px;">
+    <h2>Inscribe tu Emprendimiento</h2>
+    <form id="form-registro">
+        <input type="text" id="reg-nombreE" placeholder="Nombre del Emprendimiento" required>
+        <input type="text" id="reg-nombreD" placeholder="Tu Nombre (Dueño)" required>
+        <input type="email" id="reg-email" placeholder="Correo electrónico" required>
+        <input type="text" id="reg-whatsapp" placeholder="WhatsApp">
+        
+        <hr>
+        <h4>Tu primer producto o servicio</h4>
+        <input type="text" id="item-nombre" placeholder="Nombre del producto/servicio" required>
+        <select id="item-clase">
+            <option value="producto">Producto</option>
+            <option value="servicio">Servicio</option>
+        </select>
+        <input type="number" id="item-precio" placeholder="Precio (COP)" required>
+
+        <button type="button" onclick="enviarRegistro()" class="btn-pagar">REGISTRARME</button>
+    </form>
+</section>
+
         <section id="contenedor-tiendas">
             <div class="card">
                 <h3>Emprendimiento de Prueba</h3>
