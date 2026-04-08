@@ -1,0 +1,43 @@
+/* Estilos base que ya tienes */
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f4f4; margin: 0; }
+header { display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; background: #2c3e50; color: white; }
+
+/* Estilo para los nombres de emprendimientos */
+.contenedor-tiendas { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
+
+.card { 
+    background: white; 
+    padding: 20px; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+    transition: transform 0.3s;
+}
+
+.card:hover { transform: translateY(-5px); }
+
+/* Estilo para el botón de la canasta */
+#btn-carrito { 
+    background: #e67e22; 
+    padding: 10px 15px; 
+    border-radius: 20px; 
+    cursor: pointer; 
+    font-weight: bold; 
+}
+
+/* El botón verde de pago que pediste */
+.btn-pagar { 
+    background: #28a745; 
+    color: white; 
+    border: none; 
+    padding: 12px; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-pagar:hover { background: #218838; }
+
+.hidden { display: none; }
